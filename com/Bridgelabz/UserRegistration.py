@@ -6,21 +6,25 @@ class UserRegistration:
 
     # User First Name
     def user_firstname(self):
-        user_name = input("Enter the User First Name : ")
-        result = re.match(UserRegistration.pattern, user_name)
-        if result:
-            print("Valid Name")
-        else:
-            print("Invalid Name, Please enter name in proper format")
+        while True:
+            user_name = input("Enter the User First Name : ")
+            result = re.match(UserRegistration.pattern, user_name)
+            if result:
+                print("Valid Name")
+                break
+            else:
+                print("Invalid Name, Please enter name in proper format")
 
     # User Last Name
     def user_lastname(self):
-        user_name = input("Enter the User Last Name : ")
-        result = re.match(UserRegistration.pattern, user_name)
-        if result:
-            print("Valid Name")
-        else:
-            print("Invalid Name, Please enter Name in proper format")
+        while True:
+            user_name = input("Enter the User Last Name : ")
+            result = re.match(UserRegistration.pattern, user_name)
+            if result:
+                print("Valid Name")
+                break
+            else:
+                print("Invalid Name, Please enter Name in proper format")
 
 
 if __name__ == "__main__":
