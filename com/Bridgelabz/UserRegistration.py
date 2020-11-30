@@ -3,16 +3,18 @@ import re
 
 class UserRegistration:
     NAME_REGEX = '^[A-Z]{1}[a-z]{3,}$'
-    EMAIL_REGEX = '^[a-zA-Z0-9]+([.+-_][a-z-A-Z0-9]+)*@[a-zA-Z0-9]+.[a-z]{2,3}([.][a-z]{2})*$'
+    EMAIL_REGEX = '^[a-zA-Z]+([.+-_][a-z-A-Z0-9]+)*@[a-zA-Z]+.[a-z]{2,3}([.][a-z]{2})*$'
     MOBILE_REGEX = '^[91]{2}[ ]?[0-9]{10}$'
     PASSWD_REGEX = '^[a-zA-Z]{8,}$'
 
     # User First Name
     def user_firstname(self):
+        """
+        Taking the First Name from user and match it with respective regex pattern
+        """
         while True:
             user_name = input("Enter the User First Name : ")
-            result = re.match(UserRegistration.NAME_REGEX, user_name)
-            if result:
+            if re.fullmatch(UserRegistration.NAME_REGEX, user_name):
                 print("Valid Name")
                 break
             else:
@@ -20,10 +22,12 @@ class UserRegistration:
 
     # User Last Name
     def user_lastname(self):
+        """
+        Taking the Last Name from user and match it with respective regex pattern
+        """
         while True:
             user_name = input("Enter the User Last Name : ")
-            result = re.match(UserRegistration.NAME_REGEX, user_name)
-            if result:
+            if re.fullmatch(UserRegistration.NAME_REGEX, user_name):
                 print("Valid Name")
                 break
             else:
@@ -31,10 +35,12 @@ class UserRegistration:
 
     # User Email
     def user_email(self):
+        """
+        Taking the Email Id from user and match it with respective regex pattern
+        """
         while True:
             user_email = input("Enter the Email Id : ")
-            result = re.match(UserRegistration.EMAIL_REGEX, user_email)
-            if result:
+            if re.fullmatch(UserRegistration.EMAIL_REGEX, user_email):
                 print("Valid Email Id")
                 break
             else:
@@ -42,10 +48,12 @@ class UserRegistration:
 
     # User Email
     def user_mobnumber(self):
+        """
+        Taking the Mobile Number from user and match it with respective regex pattern
+        """
         while True:
             user_mobnumber = input("Enter the Mobile Number : ")
-            result = re.match(UserRegistration.MOBILE_REGEX, user_mobnumber)
-            if result:
+            if re.fullmatch(UserRegistration.MOBILE_REGEX, user_mobnumber):
                 print("Valid Mobile Number")
                 break
             else:
@@ -53,10 +61,12 @@ class UserRegistration:
 
     # User Password
     def user_password(self):
+        """
+        Taking the Password from user and match it with respective regex pattern
+        """
         while True:
             user_password = input("Enter the Password : ")
-            result = re.match(UserRegistration.PASSWD_REGEX, user_password)
-            if result:
+            if re.fullmatch(UserRegistration.PASSWD_REGEX, user_password):
                 print("Valid Password")
                 break
             else:
