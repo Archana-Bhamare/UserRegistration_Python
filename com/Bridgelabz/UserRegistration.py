@@ -3,7 +3,7 @@ import re
 
 class UserRegistration:
     NAME_REGEX = '^[A-Z]{1}[a-z]{3,}$'
-    EMAIL_REGEX = '^[a-zA-Z0-9]+([.+-_][a-z-A-Z0-9]+)*@[a-zA-Z0-9]+.[a-z]{2,3}([.][a-z]{2})*$'
+    EMAIL_REGEX = '^[a-zA-Z]+([.+-_][a-z-A-Z0-9]+)*@[a-zA-Z]+.[a-z]{2,3}([.][a-z]{2})*$'
     MOBILE_REGEX = '^[91]{2}[ ]?[0-9]{10}$'
 
     # User First Name
