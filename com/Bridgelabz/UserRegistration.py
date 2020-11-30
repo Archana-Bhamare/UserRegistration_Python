@@ -12,7 +12,7 @@ class UserRegistration:
         """
         while True:
             user_name = input("Enter the User First Name : ")
-            if re.match(UserRegistration.NAME_REGEX, user_name):
+            if re.fullmatch(UserRegistration.NAME_REGEX, user_name):
                 print("Valid Name")
                 break
             else:
@@ -25,7 +25,7 @@ class UserRegistration:
         """
         while True:
             user_name = input("Enter the User Last Name : ")
-            if re.match(UserRegistration.NAME_REGEX, user_name):
+            if re.fullmatch(UserRegistration.NAME_REGEX, user_name):
                 print("Valid Name")
                 break
             else:
@@ -38,7 +38,7 @@ class UserRegistration:
         """
         while True:
             user_email = input("Enter the Email Id : ")
-            if re.match(UserRegistration.EMAIL_REGEX, user_email):
+            if re.fullmatch(UserRegistration.EMAIL_REGEX, user_email):
                 print("Valid Email Id")
                 break
             else:
