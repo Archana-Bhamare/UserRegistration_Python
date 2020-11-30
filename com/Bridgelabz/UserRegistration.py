@@ -5,6 +5,7 @@ class UserRegistration:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     pattern = '^[A-Z]{1}[a-z]{3,}$'
 
     # User First Name
@@ -31,6 +32,12 @@ class UserRegistration:
     MOBILE_REGEX = '^[91]{2}[ ]?[0-9]{10}$'
     PASSWD_REGEX = '^(?=.*[A-Z])[a-zA-Z0-9]{8,}$'
 >>>>>>> UC6-PasswordWith_1UpperCaseLetter
+=======
+    NAME_REGEX = '^[A-Z]{1}[a-z]{3,}$'
+    EMAIL_REGEX = '^[a-zA-Z0-9]+([.+-_][a-z-A-Z0-9]+)*@[a-zA-Z0-9]+.[a-z]{2,3}([.][a-z]{2})*$'
+    MOBILE_REGEX = '^[91]{2}[ ]?[0-9]{10}$'
+    PASSWD_REGEX = '^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}'
+>>>>>>> UC7-PasswordWith_NumericNumber
 
     # User First Name
     def user_firstname(self):
@@ -38,16 +45,20 @@ class UserRegistration:
         result = re.match(UserRegistration.NAME_REGEX, user_name)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> UC3_User_Email
 =======
 >>>>>>> UC5-PasswordWith_Min_8_Characters
 =======
 >>>>>>> UC6-PasswordWith_1UpperCaseLetter
+=======
+>>>>>>> UC7-PasswordWith_NumericNumber
         if result:
             print("Valid Name")
         else:
             print("Invalid Name, Please enter name in proper format")
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -66,10 +77,13 @@ if __name__ == "__main__":
 >>>>>>> UC5-PasswordWith_Min_8_Characters
 =======
 >>>>>>> UC6-PasswordWith_1UpperCaseLetter
+=======
+>>>>>>> UC7-PasswordWith_NumericNumber
     # User Last Name
     def user_lastname(self):
         user_name = input("Enter the User Last Name : ")
         result = re.match(UserRegistration.NAME_REGEX, user_name)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> UC3_User_Email
@@ -77,6 +91,8 @@ if __name__ == "__main__":
 >>>>>>> UC5-PasswordWith_Min_8_Characters
 =======
 >>>>>>> UC6-PasswordWith_1UpperCaseLetter
+=======
+>>>>>>> UC7-PasswordWith_NumericNumber
         if result:
             print("Valid Name")
         else:
@@ -85,11 +101,14 @@ if __name__ == "__main__":
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> UC5-PasswordWith_Min_8_Characters
 =======
 >>>>>>> UC6-PasswordWith_1UpperCaseLetter
+=======
+>>>>>>> UC7-PasswordWith_NumericNumber
     # User Email
     def user_email(self):
         user_email = input("Enter the Email Id : ")
@@ -99,12 +118,15 @@ if __name__ == "__main__":
         else:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             print("Invalid Emaild Id")
 
 >>>>>>> UC3_User_Email
 =======
 =======
 >>>>>>> UC6-PasswordWith_1UpperCaseLetter
+=======
+>>>>>>> UC7-PasswordWith_NumericNumber
             print("Invalid Email Id")
 
     # User Email
@@ -126,14 +148,18 @@ if __name__ == "__main__":
             print("Invalid Password, Please enter valid password")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> UC5-PasswordWith_Min_8_Characters
 =======
 >>>>>>> UC6-PasswordWith_1UpperCaseLetter
+=======
+>>>>>>> UC7-PasswordWith_NumericNumber
 
 if __name__ == "__main__":
     user = UserRegistration()
     user.user_firstname()
     user.user_lastname()
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -151,3 +177,8 @@ if __name__ == "__main__":
     user.user_mobnumber()
     user.user_password()
 >>>>>>> UC6-PasswordWith_1UpperCaseLetter
+=======
+    user.user_email()
+    user.user_mobnumber()
+    user.user_password()
+>>>>>>> UC7-PasswordWith_NumericNumber
