@@ -2,14 +2,16 @@ import re
 
 
 class UserRegistration:
-    pattern = '^[A-Z]{1}[a-z]{3,}$'
+    NAME_REGEX = '^[A-Z]{1}[a-z]{3,}$'
 
     # User First Name
     def user_name(self):
+        """
+        Taking the First Name from user and match it with respective regex pattern
+        """
         while True:
             user_name = input("Enter the User Name : ")
-            result = re.match(UserRegistration.pattern, user_name)
-            if result:
+            if re.fullmatch(UserRegistration.NAME_REGEX, user_name):
                 print("Valid Name")
                 break
             else:
