@@ -2,7 +2,7 @@ import re
 
 
 class EmailTest:
-    REGEX = '^[a-zA-Z]+([.+-_][a-z-A-Z0-9]+)*@[a-zA-Z]+.[a-z]{2,3}([.][a-z]{2})*$'
+    REGEX = '^[a-zA-Z]+([.+-_][a-z-A-Z0-9]+)*@{1}[a-zA-Z]+.[a-z]{2,3}([.][a-z]{2})?$'
     # Valid Email Ids
     valid_email = {
         "abc@yahoo.com",
@@ -27,6 +27,7 @@ class EmailTest:
         "abc.@gmail.com",
         "abc@abc@gmail.com",
         "abc@gmail.com.1a",
+        "abc@gmail.com.aa.au"
     }
 
     # EMail Validation
